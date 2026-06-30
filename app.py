@@ -38,7 +38,7 @@ def fetch_currency_data(currency, month):
 
     year, mon = month.split("-")
 
-    url = f"https://rate.bot.com.tw/xrt/quote/day/{currency}"
+    url = f"https://rate.bot.com.tw/xrt/flcsv/0/day"
 
     headers = {
         "User-Agent": "Mozilla/5.0"
