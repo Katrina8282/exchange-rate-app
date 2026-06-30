@@ -46,7 +46,7 @@ def generate_data(month):
                 "遠期180天_賣出": 0,
             }
             rows.append(row)
-                    for i in range(9):
+            for i in range(9):
             row = {
                 "資料日期": "",
                 "幣別": "",
