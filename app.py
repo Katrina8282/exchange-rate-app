@@ -51,11 +51,11 @@ def fetch_currency_data(currency, month):
         st.warning(f"{currency} 下載失敗：{e}")
         return pd.DataFrame()
 
-st.write(url)
-st.text(response.text[:2000])
+    st.write(url)
+    st.text(response.text[:2000])
 
-soup = BeautifulSoup(response.text, "lxml")
-table = soup.find("table")
+    soup = BeautifulSoup(response.text, "lxml")
+    table = soup.find("table")
 
     if table is None:
         st.warning(f"{currency} 找不到台銀資料表")
