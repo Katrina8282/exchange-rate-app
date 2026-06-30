@@ -46,7 +46,8 @@ def generate_data(month):
                 "遠期180天_賣出": 0,
             }
             rows.append(row)
-            for i in range(9):
+
+        for i in range(9):
             row = {
                 "資料日期": "",
                 "幣別": "",
@@ -74,7 +75,8 @@ def generate_data(month):
             rows.append(row)
 
     return pd.DataFrame(rows)
-    if st.button("產生資料"):
+
+if st.button("產生資料"):
     df = generate_data(month)
 
     st.success("成功產生匯率表！")
